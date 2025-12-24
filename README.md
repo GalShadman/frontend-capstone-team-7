@@ -1,1 +1,1 @@
-hello world# frontend-capstone-team-7
+# frontend-capstone-team-7
