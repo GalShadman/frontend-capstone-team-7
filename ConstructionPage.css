@@ -1,0 +1,62 @@
+body {
+    background-image: url(images/music.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    font-family: Arial;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(85, 64, 64, 0.5);
+    z-index: -1;
+    
+}
+
+.navbar {
+    margin-bottom: 3px;
+}
+
+.create {
+    padding-right: 50px;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+body {
+    padding-bottom: 100px;
+}
+
+.create {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff1b6b, #ff9a44);
+    color: white;
+    font-size: 18px;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    z-index: 999;
+}
+
+.bild {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    color: #000;
+    margin-bottom: 10px;
+    
+}
+
