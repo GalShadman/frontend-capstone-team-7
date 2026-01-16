@@ -65,10 +65,7 @@ body::before {
         padding: 10px;
     }
 
-    .MixesYouLike img {
-    width: 20000px; 
-    height: auto;
-  }
+    
 
 }
 
@@ -81,6 +78,7 @@ body::before {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
     margin: 2px;
 }
+
 
 .MixesYouLike img {
     width: 200px;
