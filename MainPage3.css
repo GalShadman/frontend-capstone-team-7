@@ -35,21 +35,12 @@ body::before {
 }
 
 @media (max-width: 768px) {
-
-    header {
-        text-align: center;
-    }
-
-    .nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
+    .YourMixes, .MixesYouLike, .MixesForYou {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-auto-columns: max-content;
     
+  }
 
 }
 
