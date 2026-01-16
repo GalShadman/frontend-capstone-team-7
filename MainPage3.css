@@ -53,7 +53,11 @@ body::before {
         grid-row: 2;
     }
 
-
+    .YourMixes h3, .MixesYouLike h3, .MixesForYou h3 {
+        position: sticky;
+        left: 0;
+        right: 0;
+    }
 
 
 
