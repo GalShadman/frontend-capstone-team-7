@@ -35,7 +35,18 @@ body::before {
 }
 
 @media (max-width: 768px) {
-    
+
+    .YourMixes, .MixesYouLike, .MixesForYou {
+
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-auto-columns: max-content;
+        overflow-x: auto;
+    }
+
+
+
+
 }
 
 .YourMixes img, .MixesYouLike img, .MixesForYou img {
