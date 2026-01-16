@@ -42,7 +42,18 @@ body::before {
         grid-template-rows: auto auto;
         grid-auto-columns: max-content;
         overflow-x: auto;
+        column-gap: 12px;
+        row-gap: 12px;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        position: relative;
     }
+
+    .YourMixes .image-link, .MixesYouLike .image-link, .MixesForYou .image-link {
+        grid-row: 2;
+    }
+
+
 
 
 
