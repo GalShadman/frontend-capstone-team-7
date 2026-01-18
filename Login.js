@@ -28,5 +28,5 @@ document.getElementById("loginForm")?.addEventListener("submit", (e) => {
 
 document.getElementById("goSignup")?.addEventListener("click", (e) => {
     e.preventDefault();
-    alert("Signup page not added yet 🙂");
+    alert("Signup page not added yet");
 });
