@@ -7,6 +7,10 @@ body {
     justify-content: center;
 }
 
+.navbar {
+    margin-bottom: 3px;
+}
+
 .instruments-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
