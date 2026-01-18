@@ -107,7 +107,7 @@ p {
     margin-top: 10px;
 }
 
-button {
+.start-mixing-btn {
     background: linear-gradient(90deg, #00e5ff, #e000ff);
     color: white;
     border: 1px solid white;
@@ -123,10 +123,11 @@ button {
     margin-top: 110px;
 }
 
-button:hover {
+.start-mixing-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 25px #e000ff;
 }
+
 
 .transition-text {
     font-size: 0.8em;
@@ -150,7 +151,7 @@ button:hover {
         letter-spacing: 1px;
     }
 
-    button {
+    .start-mixing-btn {
         padding: 10px 30px;
         font-size: 14px;
         margin-top: 20px;
@@ -166,7 +167,7 @@ button:hover {
         font-size: 20px;
     }
 
-    button {
+    .start-mixing-btn {
         padding: 12px 35px;
         font-size: 16px;
     }
@@ -186,7 +187,7 @@ button:hover {
         font-size: 22px;
     }
 
-    button {
+    .start-mixing-btn {
         font-size: 18px;
     }
 }
