@@ -1,11 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #1a1a2e;
+    font-family: 'Exo 2', sans-serif;
+    background-color: #0d001a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 1.5rem;
+    color: #dae3e3;
+    font-weight: 900;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-family: "Montserrat Alternates", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+.background-container {
+    background-image: url(music.jpg);
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    font-family: sans-serif;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
 }
 
 .content {
