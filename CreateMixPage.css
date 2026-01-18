@@ -35,3 +35,14 @@ body {
 .vinyl-record {
     font-size: 80px;
 }
+
+.sliders {
+    display: flex;
+    gap: 10px;
+}
+
+.slider {
+    appearance: slider-vertical;
+    width: 10px;
+    height: 100px;
+}
