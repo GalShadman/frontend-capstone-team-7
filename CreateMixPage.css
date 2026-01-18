@@ -31,3 +31,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.vinyl-record {
+    font-size: 80px;
+}
