@@ -11,6 +11,11 @@ body {
     overflow-x: hidden;
 }
 
+.navbar {
+    position: relative;
+    z-index: 9999;
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -52,6 +57,7 @@ body {
 }
 
 .background-container {
+    position: relative;
     background-image: url(music.jpg);
     background-size: cover;
     background-position: center;
