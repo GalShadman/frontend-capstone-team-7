@@ -8,7 +8,7 @@ document.querySelectorAll("[data-toggle]").forEach((btn) => {
         const willShow = input.type === "password";
         input.type = willShow ? "text" : "password";
 
-   
+
         btn.setAttribute("aria-pressed", String(willShow));
         btn.setAttribute("aria-label", willShow ? "Hide password" : "Show password");
     });
