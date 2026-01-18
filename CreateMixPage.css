@@ -1,10 +1,19 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #2c1a4d, #1a1a2e);
-    color: white;
+    background-color: #1a1a2e;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
 }
 
 .navbar {
@@ -15,19 +24,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    width: 100%;
 }
 
 .card {
-    height: 100px;
+    height: 120px;
+    background: #ffffff;
+    color: #000;
     border-radius: 15px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    font-weight: bold;
 }
 
 .mixer-controls {
