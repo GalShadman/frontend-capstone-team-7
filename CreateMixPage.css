@@ -12,3 +12,16 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
+
+.card {
+    height: 100px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
