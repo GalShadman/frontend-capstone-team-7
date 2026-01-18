@@ -10,67 +10,69 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="main-header">
-        <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vinyl-fill"
-                viewBox="0 0 16 16">
-                <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
-                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0" />
-            </svg>
-            <i class="bi bi-vinyl-fill"></i> DJ Mixer
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main-container">
-        <div class="content">
-            <section class="wave-container">
-                <div class="wave-row"> </div>
-                <div class="wave-row"> </div>
-            </section>
-
-            <section class="instruments-grid">
-                <button class="card guitar" aria-label="Play Guitar">
-                    <span>Guitar</span>
-                </button>
-                <button class="card piano" aria-label="Play Piano">
-                    <span>Piano</span>
-                </button>
-                <button class="card trumpet" aria-label="Play Trumpet">
-                    <span>Trumpet</span>
-                </button>
-                <button class="card drums" aria-label="Play Drums">
-                    <span>Drums</span>
-                </button>
-            </section>
-
-            <section class="mixer-controls">
-                <div class="vinyl-record">💿</div>
-                <div class="sliders">
-                    <input type="range" orient="vertical" class="slider">
-                    <input type="range" orient="vertical" class="slider">
-                    <input type="range" orient="vertical" class="slider">
-                </div>
-            </section>
-        </div>
-    </main>
-
-
-
-    <footer class="player-controls">
-        <div class="main-buttons">
-            <button>⏮</button>
-            <button class="play-btn">▶</button>
-            <button>⏭</button>
-        </div>
-        <button class="save-mix">Save Mix</button>
-    </footer>
+<header class="main-header">
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vinyl-fill"
+            viewBox="0 0 16 16">
+            <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 3a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0" />
+        </svg>
+        <i class="bi bi-vinyl-fill"></i> DJ Mixer
     </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="background-container">
+        <div class="transparent-overlay">
+            <main class="main-container">
+                <div class="content">
+                    <section class="wave-container">
+                        <div class="wave-row"> </div>
+                        <div class="wave-row"> </div>
+                    </section>
+
+                    <section class="instruments-grid">
+                        <button class="card guitar" aria-label="Play Guitar">
+                            <span>Guitar</span>
+                        </button>
+                        <button class="card piano" aria-label="Play Piano">
+                            <span>Piano</span>
+                        </button>
+                        <button class="card trumpet" aria-label="Play Trumpet">
+                            <span>Trumpet</span>
+                        </button>
+                        <button class="card drums" aria-label="Play Drums">
+                            <span>Drums</span>
+                        </button>
+                    </section>
+
+                    <section class="mixer-controls">
+                        <div class="vinyl-record">💿</div>
+                        <div class="sliders">
+                            <input type="range" orient="vertical" class="slider">
+                            <input type="range" orient="vertical" class="slider">
+                            <input type="range" orient="vertical" class="slider">
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+
 </body>
+
+<footer class="player-controls">
+    <div class="main-buttons">
+        <button>⏮</button>
+        <button class="play-btn">▶</button>
+        <button>⏭</button>
+    </div>
+    <button class="save-mix">Save Mix</button>
+</footer>
 
 </html>
