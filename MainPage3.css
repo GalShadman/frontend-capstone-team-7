@@ -64,15 +64,6 @@ body::before {
         right: 0;
     }
 
-    .YourMixes img, .MixesYouLike img, .MixesForYou img {
-        width: 26vw;
-        max-width: 130px;
-        min-width: 130px;
-        height: auto;
-
-    }
-
-
 
 
 
