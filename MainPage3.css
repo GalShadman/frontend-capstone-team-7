@@ -112,24 +112,18 @@ body {
 
 @media (max-width: 425px) {
 
-    .YourMixes,
-    .MixesYouLike,
-    .MixesForYou {
+    .YourMixes, .MixesYouLike, .MixesForYou {
         padding: 10px;
         margin-bottom: 8px;
     }
 
-    .YourMixes img,
-    .MixesYouLike img,
-    .MixesForYou img {
+    .YourMixes img, .MixesYouLike img, .MixesForYou img {
         width: 130px;
         padding: 4px;
         border-radius: 6px;
     }
 
-    .YourMixes,
-    .MixesYouLike,
-    .MixesForYou {
+    .YourMixes, .MixesYouLike, .MixesForYou {
         column-gap: 8px;
         row-gap: 8px;
     }
