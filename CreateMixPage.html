@@ -13,37 +13,59 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Dj Mix</a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarColor01">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Recording</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="MainPage3.html">Library</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Dj Mix</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recording</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainPage3.html">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <main class="background-container">
         <div class="transparent-overlay">
+            <aside class="sounds-library">
+                <h2 class="library-title">Sounds Library</h2>
+                <div class="instruments-grid">
+                    <button class="card guitar" aria-label="Play Guitar">
+                        <span>Guitar</span>
+                        <img src="guitar.jpg" alt="Guitar image">
+                    </button>
+                    <button class="card piano" aria-label="Play Piano">
+                        <span>Piano</span>
+                        <img src="piano.jpg" alt="Piano image">
+                    </button>
+                    <button class="card trumpet" aria-label="Play Trumpet">
+                        <span>Trumpet</span>
+                        <img src="trumpet.jpg" alt="Trumpet image">
+                    </button>
+                    <button class="card drums" aria-label="Play Drums">
+                        <span>Drums</span>
+                        <img src="drums.jpg" alt="Drums image">
+                    </button>
+                </div>
+            </aside>
             <main class="main-container">
                 <div class="content">
                     <section class="audio-tracks">
@@ -60,25 +82,6 @@
                             <div class="track-cell wave"></div>
                             <div class="track-cell empty"></div>
                         </div>
-                    </section>
-
-                    <section class="instruments-grid">
-                        <button class="card guitar" aria-label="Play Guitar">
-                            <span>Guitar</span>
-                            <img src="guitar.jpg" alt="Guitar image">
-                        </button>
-                        <button class="card piano" aria-label="Play Piano">
-                            <span>Piano</span>
-                            <img src="piano.jpg" alt="Piano image">
-                        </button>
-                        <button class="card trumpet" aria-label="Play Trumpet">
-                            <span>Trumpet</span>
-                            <img src="trumpet.jpg" alt="Trumpet image">
-                        </button>
-                        <button class="card drums" aria-label="Play Drums">
-                            <span>Drums</span>
-                            <img src="drums.jpg" alt="Drums image">
-                        </button>
                     </section>
 
                     <section class="mixer-controls">
@@ -104,7 +107,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 
 
