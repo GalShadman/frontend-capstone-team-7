@@ -5,10 +5,25 @@
 }
 
 body {
-    font-family: 'Exo 2', sans-serif;
-    background-color: #0d001a;
-    color: white;
-    overflow-x: hidden;
+    margin: 0;
+    font-family: "PT Serif", serif;
+    color: rgba(255, 255, 255, .92);
+    background-image: url("music.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #070812;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(900px 500px at 30% 0%, rgba(255, 43, 214, .18), transparent 60%),
+        radial-gradient(900px 500px at 80% 10%, rgba(91, 91, 255, .16), transparent 60%),
+        rgba(0, 0, 0, .28);
 }
 
 .main-header {
@@ -51,7 +66,7 @@ body {
     text-shadow: 0 0 8px #ff00ff;
 }
 
-.background-container {
+/* .background-container {
     background-image: url(music.jpg);
     background-size: cover;
     background-position: center;
@@ -59,9 +74,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.transparent-overlay {
+/* .transparent-overlay {
     width: 100%;
     height: 100%;
     min-height: 100vh;
@@ -72,7 +87,7 @@ body {
     justify-content: center;
     text-align: center;
     z-index: 1;
-}
+} */
 
 .player-controls {
     display: flex;
@@ -273,7 +288,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 50px;
-    background-color: #d1d1d1; 
+    background-color: #d1d1d1;
     border: 2px solid #000;
     border-radius: 4px;
     overflow: hidden;
