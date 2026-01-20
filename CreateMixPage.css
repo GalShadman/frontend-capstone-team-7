@@ -26,6 +26,8 @@ body::before {
         rgba(0, 0, 0, .28);
 }
 
+
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -66,15 +68,14 @@ body::before {
     text-shadow: 0 0 8px #ff00ff;
 }
 
-/* .background-container {
-    background-image: url(music.jpg);
-    background-size: cover;
-    background-position: center;
+.background-container {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+    display: grid;
+    place-items: center;
+    padding: clamp(14px, 2.2vw, 26px);
+    position: relative;
+    z-index: 1;
+}
 
 /* .transparent-overlay {
     width: 100%;
