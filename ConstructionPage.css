@@ -84,6 +84,15 @@ body {
   animation: pulse 2s infinite;
 }
 
+.construction-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+
 .create:hover {
     transform: translateX(-50%) scale(1.05);
     box-shadow: 0 15px 30px rgba(0,0,0,0.45);
