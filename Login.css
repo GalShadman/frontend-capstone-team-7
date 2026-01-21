@@ -35,6 +35,8 @@ body {
     width: clamp(300px, 88vw, 440px);
     padding: clamp(12px, 2vw, 18px);
     padding-top: clamp(12px, 2vw, 22px);
+    margin-top: clamp(30px, 8vh, 90px);
+    margin-bottom: clamp(30px, 8vh, 90px);
 
     border: 1px solid var(--stroke);
     border-radius: 22px;
@@ -265,6 +267,12 @@ body {
         --card-scale: .92;
     }
 }
+@media (max-height: 800px) {
+    :root {
+        --card-scale: .92;
+    }
+}
+
 
 @media (max-height: 700px) {
     :root {
