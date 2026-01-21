@@ -45,6 +45,7 @@ body::before {
     padding: clamp(14px, 2.2vw, 26px);
     position: relative;
     z-index: 1;
+    margin-top: 60px;
 }
 
 .about {
@@ -152,7 +153,7 @@ body::before {
 
 .a-card h3 {
     margin: 10px 0 6px;
-    font-family: "PT Serif", serif;
+     font-family: "Playfair Display", serif;
     font-size: clamp(16px, 1.6vw, 18px);
     color: rgba(255, 255, 255, .95);
 }
@@ -208,13 +209,19 @@ body::before {
 
 .btn.primary {
     border: none;
-    color: #0b0b16;
+    color: #ffffff;
     background: linear-gradient(90deg, var(--purple), var(--pink));
     box-shadow: 0 14px 30px rgba(91, 91, 255, .18);
 }
+.btn.ghost {
+    color: rgba(255, 255, 255, .85);
+    background: rgba(255, 255, 255, .12);
+}
+
 
 .btn.ghost:hover {
-    background: rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .18);
+    color: #fff
 }
 
 .btn.primary:hover {
