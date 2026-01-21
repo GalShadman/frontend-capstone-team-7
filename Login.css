@@ -227,7 +227,8 @@ body {
     color: rgba(255, 255, 255, .92);
     font-weight: 700;
     cursor: pointer;
-    display: flex;
+    display: grid;
+     grid-template-columns: 32px 1fr;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -236,6 +237,28 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.btnSocial .icon {
+    width: 32px;
+    display: grid;
+    place-items: center;
+}
+
+.btnSocial .text {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icon.facebook {
+    color: #1877f2; 
+}
+.icon.google {
+    color: #db4437; 
+}
+.icon.apple {
+     color: #000;
+}
+
 
 .bottomText {
     margin: clamp(8px, 1.2vw, 10px) 0 0;
