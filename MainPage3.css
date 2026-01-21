@@ -20,7 +20,7 @@ body::before {
     margin-bottom: 3px;
 }
 
-.YourMixes, .MixesYouLike, .MixesForYou {
+.YourMixes, .MixesYouLike, .MixesForYou, .ExampleOfAdditionalPlaylists {
     padding: 20px;
     background: rgba(255, 255, 255, 0.75);
     border-radius: 12px;
@@ -39,34 +39,20 @@ body::before {
     box-shadow: 0 15px 30px rgba(0,0,0,0.45);
 }
 
-@media (max-width: 768px) {
+.mix-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
 
-    .YourMixes, .MixesYouLike, .MixesForYou {
+    scroll-snap-type: x mandatory;
+}
 
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-auto-columns: max-content;
-        overflow-x: auto;
-        column-gap: 12px;
-        row-gap: 12px;
-        overflow-y: hidden;
-        padding-bottom: 10px;
-        position: relative;
-    }
-
-    .YourMixes .image-link, .MixesYouLike .image-link, .MixesForYou .image-link {
-        grid-row: 2;
-    }
-
-    .YourMixes h3, .MixesYouLike h3, .MixesForYou h3 {
-        position: sticky;
-        left: 0;
-        right: 0;
-    }
-
-
-
-
+.mix-row .image-link {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
 }
 
 .YourMixes img, .MixesYouLike img, .MixesForYou img {
