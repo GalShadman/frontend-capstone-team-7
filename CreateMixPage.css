@@ -246,10 +246,6 @@ body::before {
         font-size: 0.9rem;
     }
 
-    .track-row {
-        height: 35px;
-        grid-template-columns: repeat(4, 1fr);
-    }
 
     .vinyl-record {
         font-size: 50px;
@@ -332,37 +328,4 @@ body::before {
     display: inline-flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.track-row {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 50px;
-    background-color: #d1d1d1;
-    border: 2px solid #000;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.track-cell {
-    border-right: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.track-cell:last-child {
-    border-right: none;
-}
-
-
-.track-cell.wave {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40"><rect x="5" y="10" width="3" height="20"/><rect x="15" y="5" width="3" height="30"/><rect x="25" y="15" width="3" height="10"/><rect x="35" y="8" width="3" height="24"/><rect x="45" y="12" width="3" height="16"/><rect x="55" y="5" width="3" height="30"/><rect x="65" y="15" width="3" height="10"/><rect x="75" y="10" width="3" height="20"/><rect x="85" y="12" width="3" height="16"/></svg>');
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-color: #c0c0c0;
-}
-
-.track-cell.empty {
-    background-color: #d1d1d1;
 }
