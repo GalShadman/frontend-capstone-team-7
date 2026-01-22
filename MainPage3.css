@@ -20,6 +20,10 @@ body::before {
     margin-bottom: 3px;
 }
 
+.container {
+  margin-top: 70px;
+}
+
 .YourMixes, .MixesYouLike, .MixesForYou, .ExampleOfAdditionalPlaylists {
     padding: 20px;
     background: rgba(8, 8, 18, 0.75);
@@ -68,6 +72,7 @@ body::before {
 
 body {
     padding-bottom: 90px;
+    
 }
 
 .create {
