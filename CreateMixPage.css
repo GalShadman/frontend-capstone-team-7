@@ -13,6 +13,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #070812;
+    overflow: hidden;
 }
 
 body::before {
@@ -27,7 +28,7 @@ body::before {
 }
 
 .background-container {
-    min-height: 100vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     padding: clamp(14px, 2.2vw, 26px);
@@ -48,8 +49,9 @@ body::before {
     gap: 30px;
     overflow: hidden;
     height: 80vh;
-    margin-top: 80px;
+    margin-top: 60px;
     margin: 80px auto 100px;
+    overflow: hidden;
 }
 
 .content {
@@ -172,10 +174,11 @@ body::before {
 }
 
 .save-mix-bottom {
+    z-index: 1000;
     padding-right: 50px;
     color: white;
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(90deg, #5b5bff, #ff2bd6);
