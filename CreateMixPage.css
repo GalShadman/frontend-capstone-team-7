@@ -320,12 +320,3 @@ body::before {
         font-size: 60px;
     }
 }
-
-.audio-tracks {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 8px;
-}
