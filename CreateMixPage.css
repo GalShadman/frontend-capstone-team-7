@@ -115,7 +115,7 @@ body::before {
     transform: scale(1.05);
 }
 
-.mixer-controls {
+.bacground-inside-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
