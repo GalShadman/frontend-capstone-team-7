@@ -222,15 +222,18 @@ body::before {
 
 
 .track-row-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    
     height: 80px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 5px;
-    gap: 2px;
-    overflow: hidden;
+    padding: 10px;
+    overflow-x: auto;
 }
 
 .track-cell {
@@ -240,9 +243,15 @@ body::before {
 }
 
 .track-cell.active-sound {
+    flex: 0 0 auto;
+    padding: 8px 15px;
+    min-width: 80px;
+    text-align: center;
     background: linear-gradient(90deg, #5b5bff, #ff2bd6);
-    box-shadow: 0 0 15px rgba(91, 91, 255, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 @media (max-width: 480px) {
