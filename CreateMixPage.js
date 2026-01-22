@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             mainTrack.appendChild(newCell);
             
-            mainTrack.scrollLeft = mainTrack.scrollWidth;
+            mainTrack.scrollTop = mainTrack.scrollHeight;
         });
     });
 });

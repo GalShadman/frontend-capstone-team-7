@@ -222,18 +222,29 @@ body::before {
 
 
 .track-row-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    gap: 12px;
     
-    height: 80px;
+    min-height: 100px; 
+    max-height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    overflow-x: auto;
+    padding: 15px;
+    width: 100%;
+}
+
+.track-row-grid::-webkit-scrollbar, .instruments-grid::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+.track-row-grid::-webkit-scrollbar-thumb, .instruments-grid::-webkit-scrollbar-thumb {
+    background: #ff2bd6;
+    border-radius: 10px;
 }
 
 .track-cell {
@@ -243,15 +254,18 @@ body::before {
 }
 
 .track-cell.active-sound {
-    flex: 0 0 auto;
-    padding: 8px 15px;
-    min-width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    background: linear-gradient(90deg, #5b5bff, #ff2bd6);
-    border-radius: 8px;
+    background: linear-gradient(135deg, #5b5bff, #ff2bd6);
+    border-radius: 10px;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
 }
 
 @media (max-width: 480px) {
