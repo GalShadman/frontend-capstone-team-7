@@ -5,7 +5,6 @@
 }
 
 body {
-    margin: 0;
     font-family: "PT Serif", serif;
     color: rgba(255, 255, 255, .92);
     background-image: url("music.jpg");
@@ -295,102 +294,61 @@ body::before {
 }
 
 @media (max-width: 480px) {
-    transparent-overlay {
-        width: 100vw;
-        height: 100vh;
-        margin-top: 56px;
-        border-radius: 0;
-        padding: 10px;
-        flex-direction: column;
-    }
+    .background-container { padding-top: 65px; }
+    .library-title { font-size: 1rem; margin-bottom: 10px; }
+    .track-row-grid { height: 120px; min-height: 120px; }
+    .vinyl-record { font-size: 50px; }
+    .save-mix-bottom { width: 80%; padding: 10px; }
+}
 
-    .sounds-library {
-        width: 100%;
-        max-height: 200px;
-        order: 2;
-    }
+.track-row-grid::-webkit-scrollbar,
+.instruments-grid::-webkit-scrollbar {
+    width: 6px;
+}
+.track-row-grid::-webkit-scrollbar-thumb,
+.instruments-grid::-webkit-scrollbar-thumb {
+    background: #ff2bd6;
+    border-radius: 10px;
+}
 
-    .instruments-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .card span {
-        font-size: 0.9rem;
-    }
-
-
-    .vinyl-record {
-        font-size: 50px;
-    }
-
-    .slider {
-        height: 100px;
-        width: 10px;
-    }
-
-    .mixer-controls {
-        padding: 15px;
-        gap: 10px;
-    }
-
-    .save-mix-bottom {
-        font-size: 15px;
-        padding: 12px 26px;
-        bottom: 20px;
-    }
-
+.track-cell.active-sound {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #5b5bff, #ff2bd6);
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 
 
 @media (max-width: 768px) {
     .transparent-overlay {
         flex-direction: column;
-        height: auto;
-        max-height: none;
-        overflow: visible;
-        margin-top: 70px;
-        padding: 15px;
+        overflow-y: auto;
     }
-
     .sounds-library {
         width: 100%;
-        height: auto;
-        max-height: 300px;
-        margin-bottom: 20px;
+        height: 250px;
+        margin-bottom: 10px;
     }
-
     .instruments-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
     }
-
-    .card span {
-        font-size: 1rem;
-    }
-
-    .mixer-controls {
-        flex-direction: column;
-        gap: 20px;
-        padding: 15px;
-    }
+    .background-container { overflow-y: auto; }
 }
 
 
 @media (max-width: 1024px) {
-    .transparent-overlay {
-        width: 98vw;
-        padding: 20px;
-        gap: 20px;
-    }
-
     .sounds-library {
         width: 220px;
     }
 
-    .vinyl-record {
-        font-size: 60px;
+    .transparent-overlay {
+        width: 98vw;
+        padding: 15px;
     }
 }
