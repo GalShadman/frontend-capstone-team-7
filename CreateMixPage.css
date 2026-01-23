@@ -451,13 +451,27 @@ body::before {
     }
 
     .track-row-grid {
-        height: 140px;
-        min-height: 140px;
-        max-height: 140px;
-        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-        padding: 10px;
-        gap: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 70px;
+    grid-template-columns: unset;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 110px;
+    min-height: 110px;
+    max-height: 110px;
+    padding: 6px;
+    width: 100%;
+    align-content: center;
+    justify-content: start;
+
     }
+
+    .track-cell, .track-cell.active-sound {
+        flex: 0 0 auto;
+    }
+
 
     .mixer-controls {
         flex-direction: row;
