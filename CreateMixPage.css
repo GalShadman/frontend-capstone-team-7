@@ -29,7 +29,8 @@ body::before {
 }
 
 .background-container {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,10 +51,10 @@ body::before {
     display: flex;
     gap: 30px;
     overflow: hidden;
-    height: 80vh;
+    height: auto;
     margin-top: 60px;
     margin: 60px auto 20px;
-    overflow: hidden;
+    overflow: visible;
     margin-bottom: 80px;
 }
 
@@ -297,10 +298,10 @@ body::before {
 @media (max-width: 480px) {
     .transparent-overlay {
         flex-direction: column;
-        height: 85vh;
+        height: auto;
         padding: 10px;
         gap: 10px;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .player-control {
@@ -407,7 +408,7 @@ body::before {
         min-height: calc(100vh - 120px);
         margin: 70px auto 90px;
         padding: 12px;
-        overflow: hidden;
+        overflow: visible;
 
 
     }
