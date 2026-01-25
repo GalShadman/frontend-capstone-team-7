@@ -131,10 +131,6 @@ body::before {
     border-radius: 20px;
 }
 
-.vinyl-record {
-    font-size: 80px;
-}
-
 .sliders {
     display: flex;
     gap: 10px;
@@ -364,10 +360,6 @@ body::before {
         justify-content: space-evenly;
     }
 
-    .vinyl-record {
-        font-size: 45px;
-    }
-
     .sliders {
         gap: 4px;
     }
@@ -501,9 +493,6 @@ body::before {
         gap: 10px;
     }
 
-    .vinyl-record {
-        font-size: 55px;
-    }
 
     .slider {
         height: 120px;
