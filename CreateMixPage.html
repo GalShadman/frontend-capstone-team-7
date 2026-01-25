@@ -60,27 +60,37 @@
 
     <main class="background-container">
         <div class="transparent-overlay">
-            <aside class="sounds-library">
-                <h2 class="library-title">Sounds Library</h2>
-                <div class="instruments-grid">
-                    <button class="card guitar" aria-label="Play Guitar" data-sound="guitar.mp3">
-                        <span>Guitar</span>
-                        <img src="guitar.jpg" alt="Guitar image">
-                    </button>
-                    <button class="card piano" aria-label="Play Piano" data-sound="piano.mp3">
-                        <span>Piano</span>
-                        <img src="piano.jpg" alt="Piano image">
-                    </button>
-                    <button class="card trumpet" aria-label="Play Trumpet" data-sound="trumpet.mp3">
-                        <span>Trumpet</span>
-                        <img src="trumpet.jpg" alt="Trumpet image">
-                    </button>
-                    <button class="card drums" aria-label="Play Drums" data-sound="drums.mp3">
-                        <span>Drums</span>
-                        <img src="drums.jpg" alt="Drums image">
-                    </button>
-                </div>
-            </aside>
+            <div class="top-layout-wrapper">
+                <aside class="sounds-library">
+                    <h2 class="library-title">Sounds Library</h2>
+                    <div class="instruments-grid">
+                        <button class="card guitar" aria-label="Play Guitar" data-sound="guitar.mp3">
+                            <span>Guitar</span>
+                            <img src="guitar.jpg" alt="Guitar image">
+                        </button>
+                        <button class="card piano" aria-label="Play Piano" data-sound="piano.mp3">
+                            <span>Piano</span>
+                            <img src="piano.jpg" alt="Piano image">
+                        </button>
+                        <button class="card trumpet" aria-label="Play Trumpet" data-sound="trumpet.mp3">
+                            <span>Trumpet</span>
+                            <img src="trumpet.jpg" alt="Trumpet image">
+                        </button>
+                        <button class="card drums" aria-label="Play Drums" data-sound="drums.mp3">
+                            <span>Drums</span>
+                            <img src="drums.jpg" alt="Drums image">
+                        </button>
+                    </div>
+                </aside>
+                <section class="bacground-inside-block mixer-controls">
+                    <div class="sliders">
+                        <input type="range" orient="vertical" class="slider">
+                        <input type="range" orient="vertical" class="slider">
+                        <input type="range" orient="vertical" class="slider">
+                    </div>
+                </section>
+            </div>
+
             <main class="main-container">
                 <section class="content">
                     <div class="player-control">
@@ -121,14 +131,6 @@
                     <div class="bacground-inside-block track-row-grid" id="main-track">
                         <!-- Tracks will be dynamically added here -->
                     </div>
-
-                    <section class="bacground-inside-block mixer-controls">
-                        <div class="sliders">
-                            <input type="range" orient="vertical" class="slider">
-                            <input type="range" orient="vertical" class="slider">
-                            <input type="range" orient="vertical" class="slider">
-                        </div>
-                    </section>
                 </section>
             </main>
         </div>
@@ -137,7 +139,7 @@
     <div class="save-mix-cta-wrapper">
         <button class="save-mix-bottom">Save mix</button>
     </div>
-    
+
     <script src="CreateMixPage.js"></script>
 </body>
 
