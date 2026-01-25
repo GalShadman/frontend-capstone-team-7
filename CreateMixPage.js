@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             
             mainTrack.appendChild(newCell);
             
-            mainTrack.scrollTop = mainTrack.scrollHeight;
+            mainTrack.scrollTo({
+                top: mainTrack.scrollHeight,
+                left: mainTrack.scrollWidth,
+                behavior: 'smooth'
+            });
         });
     });
 });
