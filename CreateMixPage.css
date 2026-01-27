@@ -150,6 +150,7 @@ body::before {
     appearance: slider-vertical;
     width: 15px;
     height: 150px;
+    accent-color: #ff2bd6;
 }
 
 
@@ -383,6 +384,7 @@ body::before {
     .slider {
         height: 50px;
         width: 10px;
+        accent-color: #ff2bd6;
     }
 
 
@@ -512,6 +514,7 @@ body::before {
     .slider {
         height: 120px;
         width: 12px;
+        accent-color: #ff2bd6;
     }
 }
 
