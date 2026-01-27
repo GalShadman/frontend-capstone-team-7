@@ -21,8 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const newCell = document.createElement('div');
             newCell.classList.add('track-cell', 'active-sound');
-            newCell.innerText = button.querySelector('span').innerText;
-            
+
+            const instrumentLabel = document.createElement('span');
+            instrumentLabel.innerText = instrumentName;
+            newCell.appendChild(instrumentLabel);
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.innerHTML = '×';
+            deleteBtn.classList.add('delete-btn');
+
+            deleteBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                newCell.remove();
+            });
+
+            newCell.appendChild(deleteBtn);
             mainTrack.appendChild(newCell);
             
             mainTrack.scrollTo({
