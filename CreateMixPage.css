@@ -136,7 +136,7 @@ body::before {
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.05);
-    padding: 30px;
+    padding: 40px;
     border-radius: 20px;
 }
 
@@ -148,9 +148,10 @@ body::before {
 
 .slider {
     appearance: slider-vertical;
-    width: 15px;
-    height: 150px;
+    width: 25px;
+    height: 300px;
     accent-color: #ff2bd6;
+    cursor: pointer;
 }
 
 
@@ -382,9 +383,16 @@ body::before {
 
 
     .slider {
-        height: 50px;
-        width: 10px;
+        height: 150px;
+        width: 15px;
         accent-color: #ff2bd6;
+    }
+
+    .mixer-controls {
+        height: 300px !important; 
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
 
@@ -504,7 +512,7 @@ body::before {
     .mixer-controls {
         width: 35%;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 10px;
         gap: 10px;
@@ -512,9 +520,10 @@ body::before {
 
 
     .slider {
-        height: 120px;
-        width: 12px;
+        height: 300px;
+        width: 25px;
         accent-color: #ff2bd6;
+        cursor: pointer;
     }
 }
 
