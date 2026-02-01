@@ -7,7 +7,7 @@
 body {
     font-family: "PT Serif", serif;
     color: rgba(255, 255, 255, .92);
-    background-image: url("music.jpg");
+    background-image: url("images/music.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
