@@ -89,6 +89,7 @@ body::before {
     overflow-x: hidden;
     padding-right: 10px;
     flex-grow: 1;
+    max-height: 290px;
 }
 
 
@@ -302,6 +303,9 @@ body::before {
     font-weight: bold;
 }
 
+.mixer-controls {
+    height: 350px;
+}
 
 @media (max-width: 480px) {
     .transparent-overlay {
@@ -365,7 +369,9 @@ body::before {
     }
 
     .instruments-grid {
+        display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
+
         gap: 6px !important;
         row-gap: 2px !important;
         max-height: 220px; 
