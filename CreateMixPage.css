@@ -139,6 +139,8 @@ body::before {
     background: rgba(255, 255, 255, 0.05);
     padding: 40px;
     border-radius: 20px;
+    max-height: 300px;
+    margin-top: 30px;
 }
 
 
@@ -251,6 +253,7 @@ body::before {
     align-items: center;
     gap: 10px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -303,9 +306,7 @@ body::before {
     font-weight: bold;
 }
 
-.mixer-controls {
-    height: 350px;
-}
+
 
 @media (max-width: 480px) {
     .transparent-overlay {
@@ -389,6 +390,7 @@ body::before {
         font-size: 0.8rem;
     }
 
+    
 
     .mixer-controls {
         flex: 1;
@@ -512,27 +514,28 @@ body::before {
     }
 
     .track-row-grid {
-        display: flex !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
+        display: grid !important; 
+        grid-template-columns: repeat(8, 1fr) !important; 
+        grid-auto-rows: 80px; 
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        height: 190px !important; 
         gap: 10px;
-        padding: 10px;
-        height: 110px;
-        align-items: center;
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch;
+        padding: 15px;
+        align-content: start;
+        flex-direction: unset !important;
+        justify-content: unset !important;
     }
 
     .track-cell.active-sound {
-        width: 80px;
-        height: 70px;
+        width: 100% !important; 
+        height: 80px !important;
     }
 
 
     .mixer-controls {
         width: 35%;
-        height: 300px;
+        max-height: 300px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -540,9 +543,8 @@ body::before {
         gap: 10px;
     }
 
-
     .slider {
-        height: 200px;
+        height: 150px;
         width: 25px;
         accent-color: #ff2bd6;
         cursor: pointer;
