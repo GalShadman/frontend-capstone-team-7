@@ -157,7 +157,9 @@ body::before {
     cursor: pointer;
 }
 
-
+.slider-icon {
+    color: white;
+}
 
 .sounds-library {
     flex: 1;
