@@ -335,20 +335,6 @@ body::before {
     }
 
 
-    #main-track {
-        height: 90px;
-        min-height: 90px;
-        padding: 5px;
-        display: flex !important;
-        gap: 8px;
-    }
-
-    .track-cell.active-sound {
-        width: 70px;
-        height: 60px;
-        font-size: 12px;
-    }
-
     .delete-btn {
         width: 18px;
         height: 18px;
@@ -392,15 +378,27 @@ body::before {
 
     .track-row-grid {
         display: grid !important;
-        grid-template-columns: repeat(6, 1fr) !important;
-        grid-auto-rows: 55px !important;
-        height: 135px !important; 
+        grid-template-columns: repeat(6, 1fr) !important; 
+        grid-auto-rows: 65px !important; 
+        row-gap: 22px !important;
+        column-gap: 8px !important;
+        height: 165px !important; 
+        padding: 10px !important;
         overflow-y: auto !important;
         overflow-x: hidden !important;
-        gap: 8px !important;
-        padding: 10px !important;
         align-content: start;
-        flex-direction: unset !important;
+    }
+
+    .track-cell.active-sound {
+        border-radius: 8px !important;
+        font-size: 10px !important;
+        font-weight: bold;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        padding: 2px !important;
     }
 
     .mixer-controls {
@@ -417,7 +415,7 @@ body::before {
 
     .slider {
         height: 130px !important;
-        width: 12px !important;
+        width: 25px !important;
         appearance: slider-vertical;
         cursor: pointer;
     }
@@ -433,6 +431,7 @@ body::before {
         justify-content: center;
     }
 
+    
 
     .save-mix-cta-wrapper {
         height: 60px;
@@ -545,7 +544,7 @@ body::before {
 
 
     .mixer-controls {
-        width: 35%;
+        width: 30%;
         max-height: 300px;
         flex-direction: column;
         justify-content: center;
