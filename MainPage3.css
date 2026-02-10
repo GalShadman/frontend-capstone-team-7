@@ -1,0 +1,128 @@
+body {
+    background-image: url(images/music.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    font-family: Arial;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(85, 64, 64, 0.5);
+    z-index: -1;
+    
+}
+
+.navbar {
+    margin-bottom: 3px;
+}
+
+.container {
+  margin-top: 70px;
+}
+
+.YourMixes, .MixesYouLike, .MixesForYou, .ExampleOfAdditionalPlaylists {
+    padding: 20px;
+    background: rgba(8, 8, 18, 0.75);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 10px;
+}
+
+.create {
+    padding-right: 50px;
+    color: white;
+
+}
+
+.create:hover {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.45);
+}
+
+.mix-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+
+    scroll-snap-type: x mandatory;
+}
+
+.mix-row .image-link {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.YourMixes img, .MixesYouLike img, .MixesForYou img {
+    width: 200px;
+    height: auto;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    margin: 2px;
+}
+
+
+body {
+    padding-bottom: 90px;
+    
+}
+
+.create {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #5b5bff, #ff2bd6);
+    color: #0b0b16;
+    font-size: 18px;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 10px 25px rgba(91, 91, 255, .35);
+    z-index: 999;
+}
+
+.bild {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    color: #000;
+    margin-bottom: 10px;
+    
+}
+
+@media (max-width: 425px) {
+
+    .YourMixes, .MixesYouLike, .MixesForYou {
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    .YourMixes img, .MixesYouLike img, .MixesForYou img {
+        width: 130px;
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+    .YourMixes, .MixesYouLike, .MixesForYou {
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+
+    .create {
+        font-size: 15px;
+        padding: 12px 26px;
+        bottom: 20px;
+    }
+}
+
