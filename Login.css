@@ -1,0 +1,320 @@
+:root {
+    --text: rgba(255, 255, 255, .92);
+    --muted: rgba(255, 255, 255, .60);
+    --stroke: rgba(255, 255, 255, .10);
+
+    --pink: #ff2bd6;
+    --purple: #5b5bff;
+
+    --panelBg: rgba(8, 8, 18, .75);
+    --fieldBg: rgba(255, 255, 255, .06);
+    --card-scale: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: clamp(8px, 2vw, 18px);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    color: var(--text);
+    background-image: url(./music.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.auth {
+    width: clamp(300px, 88vw, 440px);
+    padding: clamp(12px, 2vw, 18px);
+    padding-top: clamp(12px, 2vw, 22px);
+    
+
+    border: 1px solid var(--stroke);
+    border-radius: 22px;
+    background: var(--panelBg);
+    backdrop-filter: blur(14px);
+
+    position: relative;
+    overflow: hidden;
+    transform: scale(var(--card-scale));
+    transform-origin: top center;
+}
+
+.auth::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    pointer-events: none;
+    background:
+        radial-gradient(520px 260px at 35% 0%, rgba(91, 91, 255, .20), transparent 60%),
+        radial-gradient(520px 260px at 70% 10%, rgba(255, 43, 214, .18), transparent 62%);
+}
+
+.user-icon {
+    width: clamp(50px, 6vw, 66px);
+    height: clamp(50px, 6vw, 66px);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto clamp(6px, 1.2vw, 10px);
+    position: relative;
+    z-index: 2;
+}
+
+.icon-circle {
+    width: clamp(16px, 2vw, 22px);
+    height: clamp(16px, 2vw, 22px);
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.icon-body {
+    width: clamp(36px, 4.6vw, 48px);
+    height: clamp(18px, 2.6vw, 24px);
+    border: 2px solid #fff;
+    border-bottom: none;
+    border-radius: 24px 24px 0 0;
+    margin-top: 6px;
+}
+
+.auth__title {
+    margin: 0 0 clamp(8px, 1.2vw, 12px);
+    font-size: clamp(22px, 3.2vw, 30px);
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .45);
+}
+
+.panel {
+    position: relative;
+    z-index: 1;
+}
+
+.form {
+    display: grid;
+    gap: clamp(6px, 1vw, 8px);
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.label {
+    font-size: clamp(15px, 1.4vw, 17px);
+    color: var(--muted);
+    margin-top: 2px;
+}
+
+.input {
+    width: 100%;
+    height: clamp(40px, 4.6vw, 46px);
+    border-radius: 14px;
+    border: 1px solid var(--stroke);
+    background: var(--fieldBg);
+    color: var(--text);
+    padding: 0 44px 0 12px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, .38);
+}
+
+.inputRow {
+    position: relative;
+    width: 100%;
+}
+
+.iconBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border-radius: 12px;
+    border: 1px solid var(--stroke);
+    background: rgba(0, 0, 0, .25);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    color: rgba(255, 255, 255, .90);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   font-size: 16px;
+    color: rgba(255, 255, 255, .72);
+}
+
+.check input {
+    accent-color: var(--purple);
+}
+
+.link {
+    color: rgba(255, 255, 255, .88);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(255, 43, 214, .75);
+    outline-offset: 3px;
+}
+
+.btnPrimary {
+    width: 100%;
+    height: clamp(44px, 5.2vw, 50px);
+    border: 0;
+    border-radius: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+    box-shadow: 0 14px 36px rgba(91, 91, 255, .18);
+    margin-top: 4px;
+    color: #0b0b16;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: clamp(8px, 1.2vw, 10px) 0 clamp(6px, 1vw, 8px);
+    color: rgba(255, 255, 255, .55);
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: rgba(255, 255, 255, .12);
+}
+
+.btnSocial {
+    width: 100%;
+    height: clamp(40px, 5vw, 46px);
+    border-radius: 16px;
+    border: 1px solid var(--stroke);
+    background: rgba(255, 255, 255, .07);
+    color: rgba(255, 255, 255, .92);
+    font-weight: 700;
+    cursor: pointer;
+    display: grid;
+     grid-template-columns: 32px 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btnSocial .icon {
+    width: 32px;
+    display: grid;
+    place-items: center;
+}
+
+.btnSocial .text {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.icon.facebook {
+    color: #1877f2; 
+}
+.icon.google {
+    color: #db4437; 
+}
+.icon.apple {
+     color: #000;
+}
+
+
+.bottomText {
+    margin: clamp(8px, 1.2vw, 10px) 0 0;
+    text-align: center;
+    color: rgba(255, 255, 255, .70);
+    font-size: 16px;
+}
+
+.bottomText a {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 7px 12px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+    color: #0b0b16;
+    font-weight: 800;
+}
+
+@media (max-height: 820px) {
+    :root {
+        --card-scale: .96;
+    }
+}
+
+@media (max-height: 760px) {
+    :root {
+        --card-scale: .92;
+    }
+}
+@media (max-height: 800px) {
+    :root {
+        --card-scale: .92;
+    }
+}
+
+
+@media (max-height: 700px) {
+    :root {
+        --card-scale: .88;
+    }
+}
+
+@media (max-height: 640px) {
+    :root {
+        --card-scale: .84;
+    }
+}
+
+@media (max-height: 580px) {
+    :root {
+        --card-scale: .80;
+    }
+}
+
+@media (max-width: 340px) {
+    .auth {
+        width: 94vw;
+    }
+}
