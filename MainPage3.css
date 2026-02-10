@@ -34,7 +34,7 @@ body::before {
 
 .create {
     padding-right: 50px;
-    color: white;
+    color: rgba(255, 255, 255, .70);
 
 }
 
@@ -81,7 +81,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(90deg, #5b5bff, #ff2bd6);
-    color: #0b0b16;
+    color: rgba(255, 255, 255, .70);
     font-size: 18px;
     padding: 16px 36px;
     border: none;

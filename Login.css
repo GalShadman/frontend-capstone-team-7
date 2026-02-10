@@ -198,7 +198,7 @@ body {
     background: linear-gradient(90deg, var(--purple), var(--pink));
     box-shadow: 0 14px 36px rgba(91, 91, 255, .18);
     margin-top: 4px;
-    color: #0b0b16;
+    color: rgba(255, 255, 255, .70);
 }
 
 .divider {
@@ -256,7 +256,7 @@ body {
     color: #db4437; 
 }
 .icon.apple {
-     color: #000;
+     color: rgba(255, 255, 255, .70);
 }
 
 
@@ -275,7 +275,7 @@ body {
     padding: 7px 12px;
     border-radius: 14px;
     background: linear-gradient(90deg, var(--purple), var(--pink));
-    color: #0b0b16;
+    color: rgba(255, 255, 255, .70);
     font-weight: 800;
 }
 
