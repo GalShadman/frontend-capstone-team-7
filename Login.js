@@ -54,6 +54,7 @@ loginForm?.addEventListener("submit", (e) => {
 
     statusEl.textContent = "Logging in (demo).";
     alert("Login (demo)");
+    window.location.href = "MainPage3.html";
 });
 
 document.getElementById("forgotLink")?.addEventListener("click", (e) => {

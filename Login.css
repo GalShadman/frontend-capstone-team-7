@@ -228,7 +228,7 @@ body {
     font-weight: 700;
     cursor: pointer;
     display: grid;
-     grid-template-columns: 32px 1fr;
+    grid-template-columns: 32px 1fr;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -267,6 +267,8 @@ body {
     font-size: 16px;
 }
 
+
+
 .bottomText a {
     display: inline-block;
     margin-left: 6px;
@@ -275,6 +277,10 @@ body {
     background: linear-gradient(90deg, var(--purple), var(--pink));
     color: #0b0b16;
     font-weight: 800;
+}
+
+.line {
+    text-decoration: none;
 }
 
 @media (max-height: 820px) {
