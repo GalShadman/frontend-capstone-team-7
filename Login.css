@@ -23,7 +23,7 @@ body {
     padding: clamp(8px, 2vw, 18px);
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
     color: var(--text);
-    background-image: url(./music.jpg);
+    background-image: url(./images/music.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
