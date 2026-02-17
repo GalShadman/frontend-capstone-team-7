@@ -300,7 +300,6 @@ body {
     }
 }
 
-
 @media (max-height: 700px) {
     :root {
         --card-scale: .88;

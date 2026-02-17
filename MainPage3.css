@@ -3,7 +3,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
-    font-family: Arial;
+    padding-bottom: 90px;
     
 }
 
@@ -34,8 +34,6 @@ body::before {
 }
 
 
-
-
 .mix-row {
     display: flex;
     flex-wrap: nowrap;
@@ -63,9 +61,6 @@ body::before {
 }
 
 
-body {
-    padding-bottom: 90px;
-}
 
 .create {
     position: fixed;
