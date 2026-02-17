@@ -76,6 +76,7 @@ body::before {
 
 .navbar {
     margin-bottom: 3px;
+    font-family: "Nunito", sans-serif;
 }
 
 .instruments-grid {
@@ -179,8 +180,8 @@ body::before {
 }
 
 .library-title {
-    font-family: "Orbitron", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
     color: #ff2bd6;
     margin-bottom: 20px;
     text-transform: uppercase;
