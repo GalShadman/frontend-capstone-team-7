@@ -309,7 +309,31 @@ body::before {
     font-weight: bold;
 }
 
+.track-cell.active-sound {
+    position: relative;
+}
 
+.delete-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.delete-btn:hover {
+    background: #ff2bd6; 
+}
 
 @media (max-width: 480px) {
     .transparent-overlay {
@@ -434,8 +458,6 @@ body::before {
         justify-content: center;
     }
 
-    
-
     .save-mix-cta-wrapper {
         height: 60px;
     }
@@ -505,11 +527,6 @@ body::before {
         font-size: 0.95rem;
     }
 
-
-    .card span {
-        font-size: 1rem;
-    }
-
     .main-container {
         flex-direction: row !important;
         align-items: center;
@@ -573,28 +590,3 @@ body::before {
     }
 }
 
-.track-cell.active-sound {
-    position: relative;
-}
-
-.delete-btn {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-}
-
-.delete-btn:hover {
-    background: #ff2bd6; 
-}
